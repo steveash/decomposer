@@ -1,0 +1,8 @@
+# Introduction #
+The social graph of [LiveJournal](http://www.livejournal.com) is a nice, freely accessible, multi-million node directed graph.  Decomposing that adjacency matrix (after some suitable normalization of the rows) via SVD yields a useful metric on the graph, which encodes information beyond one degree of separation.
+
+A 132k-row sample of the adjacency matrix, as a gzip'ed tar file is available [here](http://www.decomposer.org/sample/ljGraph/lj_graph_sample_132k.tgz).  It is in a format suitable for being loaded by a DiskBackedDoubleMatrix.
+
+If you download this and unpack it, you can use this as the source for the HebbianSolver.
+
+To translate the row or column index into an lj user, use [this](http://www.decomposer.org/sample/ljGraph/profiles.txt.gz).
